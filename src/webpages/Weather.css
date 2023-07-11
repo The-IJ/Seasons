@@ -1,0 +1,32 @@
+.loc{
+    margin-left: 600px;
+}
+.but1{
+    font-size: 20px;
+    color:black;
+    background-color: rgb(175, 175, 236);
+}
+.txt1{
+    height: 35px;
+    background-color: rgb(175, 175, 236);
+    margin-top:65px;
+}
+p{
+    color:black;
+    font-size:large;
+}
+.b2{
+    margin-top:65px;
+    margin-left:70px;
+    background-color: rgb(175, 175, 236);
+    font-size: 17px;
+    float:left;
+}
+.b3{
+    margin-top:65px;
+    margin-right:70px;
+    background-color: rgb(175, 175, 236);
+    font-size: 17px;
+    float:right;
+}
+

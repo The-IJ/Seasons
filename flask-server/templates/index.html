@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        background-image: url('https://media.istockphoto.com/id/1163366315/vector/sky-background-and-pastel-color-vector-illustration.jpg?s=612x612&w=0&k=20&c=xnMNLfDTeCjKQzPgRlgpJLAkBIrnpEsOGKk7HpWHKQY=');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form,
+    button,
+    h3 {
+        margin-left: 400px;
+    }
+
+    h2 {
+        margin-left: 375px;
+    }
+
+    #redirect-button {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(186, 186, 232);
+    }
+</style>
+
+<body>
+    <div>
+        <div style="position:absolute; right:1350px; top:35px; font-size: 15px;">
+            <button id="redirect-button" onclick="window.location.href='http://localhost:3000/'">Go to Home
+                Page</button>
+        </div>
+        <h2>Season Classifier</h2><br><br>
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <label for="imageUpload" class="upload-label">
+                Choose...
+            </label>
+            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+        <br><br>
+        <div class="image-section" style="display:none;">
+            <div class="img-preview">
+                <div id="imagePreview">
+                </div>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+            </div>
+        </div>
+
+        <div class="loader" style="display:none;"></div>
+        <br><br>
+        <h3 id="result">
+        </h3>
+</body>
+</div>
+
+{% endblock %}
